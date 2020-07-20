@@ -11,7 +11,7 @@ use Symfony\Component\Routing\Annotation\Route;
 class PageAccueilController extends AbstractController
 {
     /**
-     * @Route("/", name="page_accueil, {get}")
+     * @Route("/", name="accueil")
      */
     public function index()
     {

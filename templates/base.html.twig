@@ -9,19 +9,22 @@
         <title>{% block title %}Welcome!{% endblock %}</title>
  
   </head>
-  <body style="background-color: black">
+  <body style="background-color: blue">
               <nav class="col navbar navbar-expand navbar-dark">
-                <a class="navbar-brand" href="index.html">Info School</a>
+                <a class="navbar-brand" href="{{ path('accueil') }}">Accueil</a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div id="navbarContent" class="collapse navbar-collapse">
                     <ul class="navbar-nav">
                         <li class="nav-item active">
-                            <a class="nav-link" href="index.html">Accueil</a>
+                            <a class="nav-link" href="{{ path('app_register') }}">Inscription</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Cours</a>
+                            <a class="nav-link" href="{{ path('app_login') }}">Connexion</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{ path('app_logout') }}">Déconexion</a>
                         </li>
                     </ul>
                 </div>
