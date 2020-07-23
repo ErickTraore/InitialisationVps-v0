@@ -37,6 +37,8 @@ class User implements UserInterface
     private $password;
 
     /**
+     * @var boolean
+     * 
      * @ORM\Column(type="boolean")
      */
     private $is_verified;
@@ -127,12 +129,12 @@ class User implements UserInterface
         // $this->plainPassword = null;
     }
 
-    public function isVerified(): bool
+    public function is_verified(): bool
     {
         return $this->is_verified;
     }
 
-    public function setIsVerified(bool $isVerified): self
+    public function setIsVerified(bool $isVerified=null): self
     {
         $this->is_verified = $isVerified;
 
